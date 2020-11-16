@@ -3,10 +3,6 @@ import pathlib
 
 from setuptools import setup, find_packages
 
-v_default = "0.0.0"
-v_env = os.getenv("v")
-v = v_env if v_env else v_default
-
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
 
@@ -15,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="bigninja",
-    version=v,
+    version="0.0.1",
     description="pyspark helpers",
     long_description=README,
     long_description_content_type="text/markdown",
